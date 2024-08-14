@@ -1,8 +1,10 @@
 <template>
-    <template v-for="item in tasks" :key="item.title">
+    <template v-for="(item,index) in tasks" :key="item.title">
     <v-card v-if="item.isdone==false" :title="item.title" :subtitle="item.timeData" :text="item.description">
       <v-card-actions>
         <v-btn @click="item.isdone=true;">انجام شد</v-btn>
+        |
+        <v-icon @click="tasks.splice(index, 1)" color="error" icon="mdi-delete" end tag="button"></v-icon>
       </v-card-actions>
     </v-card>
     <v-divider class="border-opacity-25" color="info"></v-divider>
