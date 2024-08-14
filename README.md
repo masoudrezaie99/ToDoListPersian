@@ -1,4 +1,9 @@
-# todo
+# Persian To Do list Application
+```
+JavaScript Framework : VueJs 3
+StateManagemer : Pinia
+UI components : Vuetify
+```
 
 ## Project setup
 ```
